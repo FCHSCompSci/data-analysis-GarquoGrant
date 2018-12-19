@@ -13,13 +13,12 @@ with open (filename) as f:
         highs.append(column[5])
         # highs.sort()
     print(highs)
-
-fig = plt.figure(dpi=94, figsize= (10, 6))
+y = [0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6, 2.8, 3, 3.2, ]
+fig = plt.figure(dpi=85, figsize= (10, 6))
 plt.plot(highs, c='red')
-
-plt.title("Earnings from Video Game Companies")
+plt.title("Shooting Games NA Earnings from 1980-2016")
 plt.xlabel('', fontsize=16)
-plt.ylabel("Sales (Millions)", fontsize=16)
+plt.ylabel("Sales (Millions)", fontsize=16, )
 plt.tick_params(axis='both', which='major', labelsize=16)
 
 plt.show()
